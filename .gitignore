@@ -1,0 +1,16 @@
+# Build output
+build/
+
+# IDE
+.vscode/
+*.suo
+*.user
+*.code-workspace
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# PowerShell
+PSModulePath/

@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        shell: pwsh
+        run: .\build.ps1 -Task Build
+
+      - name: Analyze
+        shell: pwsh
+        run: |
+          Install-Module PSScriptAnalyzer -Force -Scope CurrentUser
+          .\build.ps1 -Task Analyze
+
+      - name: Test
+        shell: pwsh
+        run: |
+          Install-Module Pester -Force -Scope CurrentUser -MinimumVersion 5.0
+          .\build.ps1 -Task Test
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Start-Uninstaller
+          path: build/Start-Uninstaller.ps1
