@@ -64,10 +64,12 @@ Function Start-Uninstaller {
 
   [CmdletBinding(
     DefaultParameterSetName = 'Default'
-    , HelpURI = ''
+    , HelpUri = ''
     , PositionalBinding = $False
     , RemotingCapability = 'None'
+    , SupportsPaging = $False
     , SupportsShouldProcess = $True
+    , SupportsTransactions = $False
     , ConfirmImpact = 'Medium'
   )]
   [OutputType([StartUninstallerRunResult])]
@@ -75,8 +77,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $True
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -88,8 +93,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -101,8 +109,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -113,8 +124,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -125,8 +139,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -137,8 +154,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -149,8 +169,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -161,8 +184,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
@@ -173,8 +199,11 @@ Function Start-Uninstaller {
     [Parameter(
       Mandatory = $False
       , ParameterSetName = 'Default'
+      , Position = [System.Int32]::MinValue
       , DontShow = $False
       , HelpMessage = 'See function help.'
+      , HelpMessageBaseName = ''
+      , HelpMessageResourceId = ''
       , ValueFromPipeline = $False
       , ValueFromPipelineByPropertyName = $False
       , ValueFromRemainingArguments = $False
